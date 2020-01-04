@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Uploadpage</title>
+        <!-- Bootstrap CSS -->
+        <script src=""></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+       
+    </head>
+    <style>
+         #head{
+            color:white;
+            padding:70px;
+            text-align:center;
+            border:10px;
+            font-size: 50px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+
+        .hide{
+            display:none;
+            background-color: red;
+        }
+        .hiddenvalue{
+            display: none;
+        }
+        .hidesearchdiv{
+            display: none;
+        }
+        
+    </style>
+    <body >
+        <div  id="lead">
+            <h1 class="" id="head"style="background-image: url(./lm.jpg)">WELCOME TO GRAPHER TODO</h1>
+        </div>
+
+        <div style="height: 100px;">
+            <label  for ="search" style="background-color:aqua; margin-left:48%; border-radius:7px; border:19px; padding:10px; height:60px; width:200px; text-align:center;" class="">Search Todo Here</label>
+            <input style="width: 300px; margin-left:45%; " type="text"  class="form-control" id ="search"/>
+            <br>
+             <button style="margin-left:50%;"  id="searchbutton" class="btn btn-info">Click to Search </button> 
+        </div>
+        <br>
+        <br>
+        <div id = "searchdiv"  class="container hidesearchdiv" style="position: relative;margin-left:45%; top:50px; bottom:50px;">
+            <h5>Search Result</h5>
+
+        </div>
+        <br>
+
+        <br>
+        <div>
+            <div class="container">
+                <h4 class="container" style="font-size:48px; color: rgb(255, 29, 156); text-align:center;" >INPUT YOUR TODO BELOW.</h4>
+            </div>
+            <div>
+                        <div class="container">
+                            <input type="text" id = "txtId" hidden>
+                            
+                            
+                            <label class="validation-error hide" id="fullNameValidationError">This field is required</label>
+                            <input type="text" id = "txtTitle" class="form-control ses" placeholder="Input todo here"/>
+                            <p class="hiddenvalue" class= "date"></p>
+                            
+                            
+                            <br>
+                            <button id="ia" class="btn btn-success gb">add Todo</button>
+                        </div>
+                    </table>
+                    <br>
+                    <hr>
+                    <table class="table table-bordered table-striped list" id="employeeList">
+                            <thead>
+                                <tr>
+                                    <th>To Do list</th>
+                                    <th>Date Posted</th>
+                                    <th>Update List</th>
+                                </tr>
+                            </thead>
+                        <tbody>
+
+                            </tbody>
+                    </table>
+                   <!-- <button id="upload">submit</button> -->
+        
+        </div>
+        <div style = "height:400px"></div>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+        <script src="./quizpage.js"></script>
+    </body>
+</html>
